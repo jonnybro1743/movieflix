@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Streaming Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/nav&popup.css">
+    <style>
+        .btn{
+         height: 100px;width: 320px;   
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0b0808;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .profile-container {
+            display: flex;
+            margin: 20px;
+            background-color: #4a4848;
+            border-radius: 28px;color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .tabs {
+            width: 200px;
+            border-right: 1px solid #ddd;
+        }
+
+        .tab {
+            padding: 15px;
+            cursor: pointer;
+            border-bottom: 1px solid #ddd;
+            background-color: #000000;
+            color: #fff;
+        }
+
+        .tab:hover {
+            background-color: #ddd;
+        }
+
+        .tab-content {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .tab-content h2 {
+            color: #efe9e9;
+        }
+
+        .tab-content p {
+            color: #f5f2f2;
+        }
+    </style>
+</head>
+<body>
+  
+    <ul class="nav-container">
+        <li>MOVIEFLIX</li>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="genre.html">GENRES</a></li>
+        <li><a href="about.html">ABOUT US</a></li>
+       <div class="rightnav">
+  
+   <input type="text" class="searchInput" id="searchInput" placeholder="search" onkeypress="searchMovies()">
+        
+          <button onclick="profilesetting.html">
+         <a href="profilesetting.html">
+          <img src="../image/profile.png" id="pp" >
+         </a>
+          </button>
+        </div>      
+        
+        
+      </ul>
+
+    <div class="profile-container">
+        <div class="tabs">
+            <div class="tab" onclick="showTab('profile')">Profile</div>
+            <div class="tab" onclick="showTab('subscription')">Subscription</div>
+            <div class="tab" onclick="showTab('settings')">Settings</div>
+        </div>
+        <div class="tab-content" id="profile-content">
+            <h2>Profile Information</h2>
+            <p>Name: John Doe</p>
+            <p>Email: john@example.com</p>
+            <!-- Add more profile information as needed -->
+        </div>
+        <div class="tab-content" id="subscription-content" style="display: none;">
+            <h2>Subscription Information</h2>
+            <p>Subscription Plan: Premium</p>
+            <p>Next Billing Date: January 1, 2025</p>
+            <!-- Add more subscription information as needed -->
+        </div>
+        <div class="tab-content" id="settings-content" style="display: none;">
+            <h2>Account Settings</h2>
+            <p>Change Password</p>
+            <p>Notification Preferences</p>
+            <!-- Add more settings options as needed -->
+        </div>
+       
+    </div>
+    <button id="btn">Sign Out</button>
+    <script>
+        function showTab(tabName) {
+            var tabs = document.querySelectorAll('.tab-content');
+            tabs.forEach(function (tab) {
+                tab.style.display = 'none';
+            });
+
+            document.getElementById(tabName + '-content').style.display = 'block';
+        }
+        let signoutbtn=document.getElementById("btn");
+        signoutbtn.addEventListener("click",function(){
+            window.location.href="signin.html";
+        });
+    </script>
+
+</body>
+</html>

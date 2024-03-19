@@ -1,0 +1,141 @@
+html {
+    height: 100%;
+  }
+  body {
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+  }
+ *{
+    padding: 0;
+    margin: 0;
+ } 
+
+  
+  .btn {
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 45%;
+    zoom: 1.5;
+  }
+  
+  button {
+    border-radius: 10px;
+    background-color: grey;
+    outline: none;
+  }
+  
+  button:hover {
+    background-color: orange;
+  }
+  
+  .close {
+    color: Black;
+    float: right;
+  }
+  
+  .close:hover {
+    color: red;
+    cursor: pointer;
+  }
+/*  */
+
+.nav-item {
+    text-align: left;
+    padding: 15px 40px;
+}
+body{
+    background-color: black;
+}
+
+.moviesmain , .main{
+  display: flex;
+gap: 20px;
+ left: 200px; 
+ 
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+} 
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    left: 20px;
+}
+
+.watch, .more-information{
+    height: 50px;
+    width: 125px;
+    border-radius: 15px;
+    font-size: 1.2em;
+
+  background-color: rgb(38,38,38);
+}
+H1{
+  color: white;
+  text-align: left;
+}
+.movies-container{
+    background-color: rgba(96, 96, 96, 0.549) ;
+    width: 1020px;position: relative;
+    height: 1060px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    
+    z-index: 1;
+    align-items:center;
+    justify-content: center;
+   
+}
+.secondRow, .firstRow, .thirdRow{
+    position: relative;
+    height: 250px;
+    width: 1000px;
+    background-color: rgba(65, 65, 65, 0.545);
+    border-radius: 15px;
+    z-index: 2;
+    display: flex;
+margin: 5px 5px 5px 5px;
+    
+    justify-content: space-evenly;
+}
+
+
+.content1{
+    height: 245px;
+    width: 190px;
+    background-color: rgba(86, 86, 86, 0.54);
+    border-radius: 15px;
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
+    transition: 0.18s;
+    z-index: 2;
+
+}
+.content1 img{
+    display: block;
+    width:100%;
+    border-radius: 5px;
+}
+.content1:hover{
+    transform: scale(1.15);
+    z-index: 2;
+}
+
+.genre{
+  border-radius: 20px;
+  width: 250px;
+  padding: 10px;
+  height: 550px;
+  background: #343131;
+  color: white;
+  
+}

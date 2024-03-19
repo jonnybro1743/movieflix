@@ -1,0 +1,71 @@
+/* style.css */
+body {
+    font-family: 'Arial', sans-serif;
+  background-image: url("../image/login.jpg");
+  background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: rgba(252, 241, 241, 0.8);
+ 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+}
+
+.h1 {
+    text-align: center;
+    color: #333;
+}
+
+.content {
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.forgot {
+    display: block;
+    margin: 10px 0;
+    color: #555;
+    text-decoration: none;
+}
+
+.continue {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.continue:hover {
+    background-color: #45a049;
+}
+
+.newaccount {
+    margin-top: 15px;
+    color: #555;
+}
+
+.a {
+    color: #4CAF50;
+    text-decoration: none;
+}

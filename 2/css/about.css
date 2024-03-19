@@ -1,0 +1,187 @@
+/* Global Styles */
+html {
+  height: 100%;
+}
+
+body {
+  background-color: black;
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+}
+/* Reset Styles */
+* {
+
+  margin: 0;
+  color: azure;
+  padding: 0;
+  font-family: sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+
+.container {
+  display: flex;
+  gap: 70px;
+  justify-content: center;
+}
+
+/* Main Section Styles */
+.mainmain {
+  gap: 60px;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+/* Image Styles */
+.img,
+.img2,
+.img3 {
+width: 60%;
+  height: 410px;
+  
+}
+.img:hover{
+  transform: scale(0.9);
+  transition: 0.50s;
+}
+.img > img{
+  
+  width: 100%;
+  border-radius: 20px;
+  height: 100%;
+  background-size: cover;
+}
+.maincontainer > h1{
+  margin: auto;
+  color: wheat;
+  font-size: 2.8em;
+}
+li > img{
+margin-top: 100px;
+  width: 140px; height: 140px;
+  margin: auto;
+}
+/* Container Styles */
+.container > li {
+  height: 250px;
+  width: 300px;
+  border-radius: 15px;
+  color: rgb(1, 1, 1);
+  font-size: 25px;
+  font-weight: 400;font-style: bold;
+  background-color: beige;
+  opacity: 0.8;
+display: flex;
+flex-direction: column;
+gap: 7px;
+  padding: 10px;text-align: center;
+  padding: 20px 0 0 0;
+}
+.container > li:hover{
+  transform: scale(0.9);
+  transition: 0.50s;
+}
+.welcome{
+  margin: auto;
+  width: 80%;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 5.6vh;
+  text-align: center;
+  font-weight: 500;
+  color: beige;
+}
+/* Section Styles */
+.section,
+.section2,
+.section3 {padding: 5px;
+  color:beige;
+  display: flex;
+  flex-direction: column;
+  gap: 4vh;
+  font-weight: 500;
+  height: 480px;
+  font-size: 30px;
+  width: 500px; 
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Header Styles */
+header > h1 {
+  font-size: 60px;
+  margin: 20px 0 20px 40px;
+  color: red; /* Replace with a valid color value */
+}
+.section > h2,
+.section2 > h2,
+.section3 > h2{
+  color: rgb(255, 42, 0);
+}
+/* Image Styles */
+
+
+/* Button Image Styles */
+button > img {
+  height: 32px;
+  width: 32px;
+}
+
+/* Main Section Styles */
+.mainsection,
+.mainsection2,
+.mainsection3 {
+  display: flex;
+  margin: auto;
+  gap: 15px;
+}
+.main_img{
+  width:1300PX;
+
+margin: auto;
+  border-radius: 20px;
+background-image: url("../image/fullscreen.png");
+  
+  
+  height: 700px;
+  margin-bottom: 20px;
+  filter: blur(px);
+  z-index: 0;
+  
+}
+.main_img:hover{
+  top: 50%;left: 50%;
+  transform: scale(0.9);
+  transition: 0.50s;
+  
+}
+.signup{
+
+  height: 70px;
+  z-index: 2;
+  font-size: 1.6em;
+  font-weight: 500;
+  width: 420px;
+margin-top: 8vh;
+
+}
+.signdiv{
+  margin-left: 40vh;
+}
+.maincontainer{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 20px 0 20px 0;
+}
+/* Additional styling can be added based on your design preferences */
+.signupnow > h2{
+text-align: center;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-size: 32px;color: red;
+
+  
+}
+.signupnow{
+  height: 30vh;
+}
